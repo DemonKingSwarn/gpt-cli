@@ -35,15 +35,19 @@ def loading():
         time.sleep(0.1)  # wait for a bit
 
 # Continuously prompt the user for input and generate responses
-while True:
-    try:
+def __start__():
+    while True:
         try:
-            prompt = input("\033[1;35m You: \033[0m")
-            response = generate_response(prompt)
-            loading()
-            print(f"\033[1;32m ChatGPT:\033[0m \033[1;36m{response}\033[0m")
-        except KeyboardInterrupt:
-            exit(0)
-    except Exception as e:
-        print("\033[1;31m [!] Invalid Error Occured \033[0m")
-        exit(1)
+            try:
+                prompt = input("\033[1;35m You: \033[0m")
+                response = generate_response(prompt)
+                loading()
+                print(f"\033[1;32m ChatGPT:\033[0m \033[1;36m{response}\033[0m")
+            except KeyboardInterrupt:
+                exit(0)
+        except Exception as e:
+            print("\033[1;31m [!] Invalid Error Occured \033[0m")
+            exit(1)
+
+if __name__ == "__main__":
+    __start__()

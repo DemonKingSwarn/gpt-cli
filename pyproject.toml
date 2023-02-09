@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "demon-gptcli"
-version = "0.1.1"
+version = "0.1.2"
 description = "CLI interface to OpenAI's GPT-3 based on DaVinci Model."
 authors = ["DemonKingSwarn <rockingswarn@gmail.com>"]
 license = "GPLv3.0"
@@ -18,4 +18,4 @@ openai = "^0.26.5"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-gpt-cli = "gpt_cli.__main__"
+gpt-cli = "gpt_cli.__main__:__start__"
