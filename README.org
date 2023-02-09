@@ -1,0 +1,16 @@
+#+TITLE: GPT-CLI
+#+AUTHOR: DemonKingSwarn
+
+A CLI interface to OpenAI's GPT-3 based on DaVinci model.
+
+* Installation
+
+#+begin_src sh
+ pip install git+https://github.com/demonkingswarn/gpt-cli
+#+end_src
+
+Then go to [[https://openai.com/api/][OpenAI's Website]] and get your *API* key.
+
+#+begin_src sh
+export OPENAI_API_KEY="YOUR API KEY"
+#+end_src

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "gpt-cli"
+version = "0.1.0"
+description = "CLI interface to OpenAI's GPT-3 based on DaVinci Model."
+authors = ["DemonKingSwarn <rockingswarn@gmail.com>"]
+license = "GPLv3.0"
+readme = "readme.txt"
+packages = [{include = "gpt_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.26.5"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+gpt-cli = "gpt_cli.__main__"
