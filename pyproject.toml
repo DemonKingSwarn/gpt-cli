@@ -3,7 +3,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "gpt-cli"
+name = "demon-gptcli"
 version = "0.1.1"
 description = "CLI interface to OpenAI's GPT-3 based on DaVinci Model."
 authors = ["DemonKingSwarn <rockingswarn@gmail.com>"]
